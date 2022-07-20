@@ -5,60 +5,448 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Spares — магазин автозапчастей</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
+      <header class="page-header">
+        <div class="page-header__top">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="page-bar">
+              <ul class="page-bar__nav  secondary-nav">
+                <li class="secondary-nav__item">
+                  <a class="secondary-nav__link" href="#">Магазины</a>
+                </li>
+                <li class="secondary-nav__item">
+                  <a class="secondary-nav__link" href="#">Акции</a>
+                </li>
+                <li class="secondary-nav__item">
+                  <a class="secondary-nav__link" href="#">Доставка и оплата</a>
+                </li>
+              </ul>
+              <a class="page-bar__logo  logo">Логотип</a>
+              <div class="page-bar__group">
+                <a class="page-bar__address" href="#">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+                <div class="page-bar__account  account">
+                  <a class="account__link" href="#">Избранное</a>
+                  <a class="account__link" href="#">Профиль</a>
+                  <a class="account__link" href="#">Корзина</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header__bottom">
+          <div class="container">
+            <nav class="page-nav">
+              <ul class="page-nav__list">
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Каталог запчастей</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Каталог ТО</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Шины</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Диски</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Аккумуляторы</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Автомасла</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Автолампы</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="" class="page-nav__link">Аксессуары</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="page-content">
+        <h1 class="visually-hidden">Spares — магазин автозапчастей</h1>
+        <section class="showcase">
+          <h2 class="visually-hidden">Акции и предложения</h2>
+          <div class="container">
+            <div class="showcase__content">
+              <div class="offers">
+                <div class="offers__list">
+                  <div class="offers__item  offer">
+                    <div class="offer__item">
+                      <img src="https://via.placeholder.com/870x397" width="870" height="397" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="offers__controls  offers-controls">
+                  <button class="offers-controls__button  offers-controls__button--prev" type="button">Предыдущее предложение</button>
+                  <button class="offers-controls__button  offers-controls__button--next" type="button">Следующее предложение</button>
+                </div>
+                <div class="offers__pagination  offers-pagination">
+                  <button class="offers-pagination__button" type="button">Предложение 1</button>
+                  <button class="offers-pagination__button" type="button">Предложение 2</button>
+                  <button class="offers-pagination__button" type="button">Предложение 3</button>
+                  <button class="offers-pagination__button" type="button">Предложение 4</button>
+                  <button class="offers-pagination__button" type="button">Предложение 5</button>
+                  <button class="offers-pagination__button" type="button">Предложение 6</button>
+                </div>
+              </div>
+              <div class="promotions">
+                <article class="promotion">
+                  <div class="promotion__photo">
+                    <img src="https://via.placeholder.com/150x187" width="150" height="187" alt="">
+                  </div>
+                  <h3 class="promotion__title">Лампочка mini...</h3>
+                  <div class="promotion__prices  promotion-prices">
+                    <p class="promotion-prices__current-price">200 ₽</p>
+                    <p class="promotion-prices__old-price">500 ₽</p>
+                  </div>
+                  <div class="promotion__timer  promotion-timer">
+                    <p class="promotion-timer__description">До конца акции осталось:</p>
+                    <div class="promotion-timer__list">
+                      <span class="promotion-timer__item">00</span>
+                      <span class="promotion-timer__item">20</span>
+                      <span class="promotion-timer__item">00</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="search">
+          <h2 class="visually-hidden">Поиск по сайту</h2>
+          <div class="container">
+            <div class="search__content">
+              <div class="search__nav  search-nav">
+                <ul class="search-nav__list">
+                  <li class="search-nav__item">
+                    <a class="search-nav__link" href="#">Поиск по Vin</a>
+                  </li>
+                  <li class="search-nav__item">
+                    <a class="search-nav__link" href="#">Поиск по марке</a>
+                  </li>
+                  <li class="search-nav__item">
+                    <a class="search-nav__link" href="#">Поиск по названию товара</a>
+                  </li>
+                  <li class="search-nav__item">
+                    <a class="search-nav__link" href="#">Поиск по артикулу</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="search-input">Введите VIN-код</label>
+                <input class="search-form__input" id="search-input" type="search" name="search-input" placeholder="Введите VIN-код" required>
+                <button class="search-form__button" type="submit">Искать</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="categories">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <div class="container">
+            <ul class="categories__list">
+              <li class="categories__item  category">
+                <a class="category__link" href="#">
+                  <p class="category__title">Автохимия</p>
+                  <span>Перейти</span>
+                </a>
+              </li>
+              <li class="categories__item  category">
+                <a class="category__link" href="#">
+                  <p class="category__title">Шины и диски</p>
+                  <span>Перейти</span>
+                </a>
+              </li>
+              <li class="categories__item  category">
+                <a class="category__link" href="#">
+                  <p class="category__title">Инструменты</p>
+                  <span>Перейти</span>
+                </a>
+              </li>
+              <li class="categories__item  category">
+                <a class="category__link" href="#">
+                  <p class="category__title">Запчасти на ТО</p>
+                  <span>Перейти</span>
+                </a>
+              </li>
+              <li class="categories__item  category">
+                <a class="category__link" href="#">
+                  <p class="category__title">Автоэлектроника</p>
+                  <span>Перейти</span>
+                </a>
+              </li>
+              <li class="categories__item  category">
+                <a class="category__link" href="#">
+                  <p class="category__title">Аксессуары и другое</p>
+                  <span>Перейти</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="popular  section">
+          <div class="container">
+            <div class="popular__content">
+              <h2 class="section__title">Популярные товары</h2>
+              <ul class="section__nav  section-nav">
+                <li class="section-nav__item">
+                  <a class="section-nav__link  section-nav__link--current" href="#">Запчасти</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Автохимия</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Шины и диски</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Автоэлектроника</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Инструменты</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Аксессуары и другое</a>
+                </li>
+              </ul>
+              <div class="popular__showcase  popular-showcase">
+                <div class="popular-showcase__list">
+                  <article class="popular-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Ремень</h3>
+                    <div class="catalog-product__presence  product-presence"></div>
+                    <div class="catalog-product__price">440 ₽</div>
+                  </article>
+                  <article class="popular-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                    <div class="catalog-product__presence  product-presence"></div>
+                    <div class="catalog-product__price">11 680 ₽</div>
+                  </article>
+                  <article class="popular-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Фара Nokian 2025</h3>
+                    <div class="catalog-product__presence  product-presence"></div>
+                    <div class="catalog-product__price">680 ₽</div>
+                  </article>
+                  <article class="popular-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+                    <div class="catalog-product__presence  product-presence">
+                      <p class="product-presence__description">Нет в наличии</p>
+                      <a class="product-presence__report" href="#">Сообщить о поступлении</a>
+                    </div>
+                  </article>
+                </div>
+                <a class="popular-showcase__show-more" href="#">Смотреть еще</a>
+                <div class="popular-showcase__controls  slider-controls">
+                  <button class="slider-controls__button  slider-controls__button--prev">Предыдущий товар</button>
+                  <button class="slider-controls__button  slider-controls__button--next">Следующий товар</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="banner">
+          <h2 class="visually-hidden">Скидка до 50%</h2>
+          <div class="container">
+            <a class="banner__content" href="#">
+              <img src="https://via.placeholder.com/1170x165" width="1170" height="165" alt="">
+              <span class="visually-hidden">Посмотреть все</span>
+            </a>
+          </div>
+        </section>
+        <section class="recommended  section">
+          <div class="container">
+            <div class="recommended__content">
+              <h2 class="section__title">С этим товаром покупают</h2>
+              <ul class="section__nav  section-nav">
+                <li class="section-nav__item">
+                  <a class="section-nav__link  section-nav__link--current" href="#">Запчасти</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Автохимия</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Шины и диски</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Автоэлектроника</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Инструменты</a>
+                </li>
+                <li class="section-nav__item">
+                  <a class="section-nav__link" href="#">Аксессуары и другое</a>
+                </li>
+              </ul>
+              <div class="recommended__showcase  recommended-showcase">
+                <div class="recommended-showcase__list">
+                  <article class="recommended-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                    <div class="catalog-product__presence  product-presence">
+                      <p class="product-presence__description">Нет в наличии</p>
+                      <a class="product-presence__report" href="#">Сообщить о поступлении</a>
+                    </div>
+                  </article>
+
+                  <article class="recommended-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                    <div class="catalog-product__presence  product-presence"></div>
+                    <div class="catalog-product__price">11 680 ₽</div>
+                  </article>
+
+                  <article class="recommended-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                    <div class="catalog-product__presence  product-presence">
+                      <p class="product-presence__description">Нет в наличии</p>
+                      <a class="product-presence__report" href="#">Сообщить о поступлении</a>
+                    </div>
+                  </article>
+
+                  <article class="recommended-showcase__item  catalog-product">
+                    <button class="catalog-product__favorite" type="button" title="Добавить в избранное">&#9829;</button>
+                    <div class="catalog-product__photo">
+                      <img src="https://via.placeholder.com/230x215" width="230" height="215" alt="">
+                    </div>
+                    <h3 class="catalog-product__title">Шина 245/60 R18 105T Contyther Crosh Conty...</h3>
+                    <div class="catalog-product__presence  product-presence"></div>
+                    <div class="catalog-product__price">11 680 ₽</div>
+                  </article>
+                </div>
+                <a class="recommended-showcase__show-more" href="#">Смотреть еще</a>
+                <div class="recommended-showcase__controls  slider-controls">
+                  <button class="slider-controls__button  slider-controls__button--prev">Предыдущий товар</button>
+                  <button class="slider-controls__button  slider-controls__button--next">Следующий товар</button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__content">
+            <div class="page-footer__top">
+              <div class="subscription">
+                <h2 class="visually-hidden">Подписка на рассылку</h2>
+                <p class="subscription__description">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</p>
+                <form class="subscription__form  subscription-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label class="visually-hidden" for="email">Введите ваш e-mail:</label>
+                  <input class="subscription-form__input" id="email" type="email" name="email" placeholder="Введите ваш e-mail:" required>
+                  <button class="subscription-form__button" type="submit">Отправить</button>
+                </form>
+              </div>
+              <div class="footer-nav">
+                <h2 class="visually-hidden">Ссылки на разделы</h2>
+                <div class="footer-nav__group">
+                  <div class="footer-nav__title">
+                    <h3 class="visually-hidden">Информация</h3>
+                    <button class="footer-nav__button" type="button">Информация</button>
+                  </div>
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">О компании</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Реквизиты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Магазины</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-nav__group">
+                  <div class="footer-nav__title">
+                    <h3 class="visually-hidden">Сервисный центр</h3>
+                    <button class="footer-nav__button" type="button">Сервисный центр</button>
+                  </div>
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Доставка и самовывоз</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Оплата</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Возврат-обмен</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Новости</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-nav__group">
+                  <div class="footer-nav__title">
+                    <h3 class="visually-hidden">Интернет-магазин</h3>
+                    <button class="footer-nav__button" type="button">Интернет-магазин</button>
+                  </div>
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Доставка и самовывоз</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Оплата</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Возврат-обмен</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Акции</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Договор оферты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="#">Политика обработки персональных данных</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__bottom">
+              <p>Интернет-магазин автозапчастей</p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
